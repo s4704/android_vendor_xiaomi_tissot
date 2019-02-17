@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -203,6 +203,16 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.qti.location.sdk
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/com.qti.location.sdk.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
@@ -213,27 +223,27 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.location.sdk
+LOCAL_MODULE := qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/etc/permissions/com.qti.location.sdk.xml
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .xml
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel
+LOCAL_MODULE := qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel.xml
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .xml
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel
+LOCAL_MODULE := qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel.xml
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .xml

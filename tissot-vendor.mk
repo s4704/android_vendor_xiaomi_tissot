@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/tissot/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/xiaomi/tissot/proprietary/bin/fingerprintd:system/bin/fingerprintd \
-    vendor/xiaomi/tissot/proprietary/bin/fpc_fingerprint_hal-test:system/bin/fpc_fingerprint_hal-test \
     vendor/xiaomi/tissot/proprietary/bin/goodixfingerprintd:system/bin/goodixfingerprintd \
     vendor/xiaomi/tissot/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/xiaomi/tissot/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
@@ -55,24 +54,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:system/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_Headset_cal.acdb:system/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:system/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
-    vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb:system/etc/acdbdata/QRD/QRD_adsp_avs_config.acdb \
-    vendor/xiaomi/tissot/proprietary/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:system/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
     vendor/xiaomi/tissot/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
     vendor/xiaomi/tissot/proprietary/etc/camera/csidtg_camera.xml:system/etc/camera/csidtg_camera.xml \
     vendor/xiaomi/tissot/proprietary/etc/camera/csidtg_chromatix.xml:system/etc/camera/csidtg_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov12a10_arc_chromatix.xml:system/etc/camera/ov12a10_arc_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov12a10_arc_ofilm_chromatix.xml:system/etc/camera/ov12a10_arc_ofilm_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov12a10_chromatix.xml:system/etc/camera/ov12a10_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov12a10_ofilm_chromatix.xml:system/etc/camera/ov12a10_ofilm_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov13850_chromatix.xml:system/etc/camera/ov13850_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov13880_arc_chromatix.xml:system/etc/camera/ov13880_arc_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov13880_arc_ofilm_chromatix.xml:system/etc/camera/ov13880_arc_ofilm_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov13880_chromatix.xml:system/etc/camera/ov13880_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov13880_ofilm_chromatix.xml:system/etc/camera/ov13880_ofilm_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/ov5675_qtech_chromatix.xml:system/etc/camera/ov5675_qtech_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/s5k5e8_ofilm_chromatix.xml:system/etc/camera/s5k5e8_ofilm_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/s5k5e8_qtech_chromatix.xml:system/etc/camera/s5k5e8_qtech_chromatix.xml \
-    vendor/xiaomi/tissot/proprietary/etc/camera/s5k5e8_sunny_chromatix.xml:system/etc/camera/s5k5e8_sunny_chromatix.xml \
     vendor/xiaomi/tissot/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/xiaomi/tissot/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/xiaomi/tissot/proprietary/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
@@ -128,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/tissot/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
@@ -136,6 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/tissot/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/tissot/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/tissot/proprietary/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
@@ -145,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/tissot/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/tissot/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/xiaomi/tissot/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/xiaomi/tissot/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/xiaomi/tissot/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
     vendor/xiaomi/tissot/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
@@ -158,42 +143,27 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/tissot/proprietary/lib/hw/audio.primary.msm8953.so:system/lib/hw/audio.primary.msm8953.so \
     vendor/xiaomi/tissot/proprietary/lib/hw/camera.msm8953.so:system/lib/hw/camera.msm8953.so \
-    vendor/xiaomi/tissot/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
     vendor/xiaomi/tissot/proprietary/lib/hw/sensors.msm8953.so:system/lib/hw/sensors.msm8953.so \
     vendor/xiaomi/tissot/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
-    vendor/xiaomi/tissot/proprietary/lib/libMiCameraHal.so:system/lib/libMiCameraHal.so \
     vendor/xiaomi/tissot/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
-    vendor/xiaomi/tissot/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/xiaomi/tissot/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/xiaomi/tissot/proprietary/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
     vendor/xiaomi/tissot/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/xiaomi/tissot/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/xiaomi/tissot/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/xiaomi/tissot/proprietary/lib/libminui.so:system/lib/libminui.so \
     vendor/xiaomi/tissot/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/xiaomi/tissot/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/tissot/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/xiaomi/tissot/proprietary/lib/libmorpho_groupshot.so:system/lib/libmorpho_groupshot.so \
-    vendor/xiaomi/tissot/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
-    vendor/xiaomi/tissot/proprietary/lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so \
     vendor/xiaomi/tissot/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/xiaomi/tissot/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/xiaomi/tissot/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
-    vendor/xiaomi/tissot/proprietary/lib/soundfx/libdirac.so:system/lib/soundfx/libdirac.so \
     vendor/xiaomi/tissot/proprietary/lib64/hw/audio.primary.msm8953.so:system/lib64/hw/audio.primary.msm8953.so \
-    vendor/xiaomi/tissot/proprietary/lib64/hw/consumerir.default.so:system/lib64/hw/consumerir.default.so \
     vendor/xiaomi/tissot/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
-    vendor/xiaomi/tissot/proprietary/lib64/hw/gf_fingerprint.default.so:system/lib64/hw/gf_fingerprint.default.so \
     vendor/xiaomi/tissot/proprietary/lib64/hw/sensors.msm8953.so:system/lib64/hw/sensors.msm8953.so \
-    vendor/xiaomi/tissot/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/xiaomi/tissot/proprietary/lib64/libgf_algo.so:system/lib64/libgf_algo.so \
     vendor/xiaomi/tissot/proprietary/lib64/libgf_ca.so:system/lib64/libgf_ca.so \
     vendor/xiaomi/tissot/proprietary/lib64/libgf_hal.so:system/lib64/libgf_hal.so \
     vendor/xiaomi/tissot/proprietary/lib64/libgoodixfingerprintd_binder.so:system/lib64/libgoodixfingerprintd_binder.so \
     vendor/xiaomi/tissot/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/xiaomi/tissot/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/xiaomi/tissot/proprietary/lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so \
-    vendor/xiaomi/tissot/proprietary/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
     vendor/xiaomi/tissot/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
     vendor/xiaomi/tissot/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
     vendor/xiaomi/tissot/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
@@ -201,7 +171,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/xiaomi/tissot/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/xiaomi/tissot/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
-    vendor/xiaomi/tissot/proprietary/vendor/bin/qseeproxysampledaemon:system/vendor/bin/qseeproxysampledaemon \
     vendor/xiaomi/tissot/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/xiaomi/tissot/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/xiaomi/tissot/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
@@ -216,23 +185,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/hw/activity_recognition.msm8953.so:system/vendor/lib/hw/activity_recognition.msm8953.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:system/vendor/lib/hw/gatekeeper.msm8953.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/hw/keystore.msm8953.so:system/vendor/lib/hw/keystore.msm8953.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/hw/sound_trigger.primary.msm8953.so:system/vendor/lib/hw/sound_trigger.primary.msm8953.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/hw/wbc_hal.default.so:system/vendor/lib/hw/wbc_hal.default.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libFaceGrade.so:system/vendor/lib/libFaceGrade.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libGPTEE.so:system/vendor/lib/libGPTEE.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
@@ -248,33 +209,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libRecoFace.so:system/vendor/lib/libRecoFace.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/lib_lowlight.so:system/vendor/lib/lib_lowlight.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_dw9763.so:system/vendor/lib/libactuator_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_dw9763_ofilm_ov12a10.so:system/vendor/lib/libactuator_dw9763_ofilm_ov12a10.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_dw9763_ofilm_ov13880.so:system/vendor/lib/libactuator_dw9763_ofilm_ov13880.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_dw9763_ov12a10.so:system/vendor/lib/libactuator_dw9763_ov12a10.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_dw9763_ov13880.so:system/vendor/lib/libactuator_dw9763_ov13880.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_ofilm_dw9763.so:system/vendor/lib/libactuator_ofilm_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libactuator_pseudo.so:system/vendor/lib/libactuator_pseudo.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libadpcmdec.so:system/vendor/lib/libadpcmdec.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libarcsoft_beautyshot.so:system/vendor/lib/libarcsoft_beautyshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libarcsoft_beautyshot_image_algorithm.so:system/vendor/lib/libarcsoft_beautyshot_image_algorithm.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libarcsoft_beautyshot_video_algorithm.so:system/vendor/lib/libarcsoft_beautyshot_video_algorithm.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:system/vendor/lib/libarcsoft_dualcam_refocus.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
@@ -289,375 +235,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_csidtg_postproc.so:system/vendor/lib/libchromatix_csidtg_postproc.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_csidtg_preview.so:system/vendor/lib/libchromatix_csidtg_preview.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_csidtg_zsl_preview.so:system/vendor/lib/libchromatix_csidtg_zsl_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_common.so:system/vendor/lib/libchromatix_ov12a10_arc_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_common.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_postproc.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_postproc.so:system/vendor/lib/libchromatix_ov12a10_arc_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_arc_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_common.so:system/vendor/lib/libchromatix_ov12a10_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_common.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_postproc.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_preview.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_snapshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_video_4k.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_common.so:system/vendor/lib/libchromatix_ov12a10_ofilm_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_ofilm_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_postproc.so:system/vendor/lib/libchromatix_ov12a10_ofilm_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_preview.so:system/vendor/lib/libchromatix_ov12a10_ofilm_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_snapshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_video_4k.so:system/vendor/lib/libchromatix_ov12a10_ofilm_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_postproc.so:system/vendor/lib/libchromatix_ov12a10_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_preview.so:system/vendor/lib/libchromatix_ov12a10_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_snapshot.so:system/vendor/lib/libchromatix_ov12a10_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_video_4k.so:system/vendor/lib/libchromatix_ov12a10_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov12a10_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_common.so:system/vendor/lib/libchromatix_ov13880_arc_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_video.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_default_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_common.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_default_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_postproc.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_preview.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_postproc.so:system/vendor/lib/libchromatix_ov13880_arc_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_preview.so:system/vendor/lib/libchromatix_ov13880_arc_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_arc_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_common.so:system/vendor/lib/libchromatix_ov13880_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13880_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov13880_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov13880_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_video.so:system/vendor/lib/libchromatix_ov13880_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_default_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_hfr_120.so:system/vendor/lib/libchromatix_ov13880_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov13880_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_hfr_60.so:system/vendor/lib/libchromatix_ov13880_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov13880_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_hfr_90.so:system/vendor/lib/libchromatix_ov13880_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov13880_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_4k_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_4k_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_common.so:system/vendor/lib/libchromatix_ov13880_ofilm_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_video.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_ofilm_cpp_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_default_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_default_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_default_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_hfr_120.so:system/vendor/lib/libchromatix_ov13880_ofilm_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_hfr_120_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_hfr_60.so:system/vendor/lib/libchromatix_ov13880_ofilm_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_hfr_60_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_hfr_90.so:system/vendor/lib/libchromatix_ov13880_ofilm_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_hfr_90_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_postproc.so:system/vendor/lib/libchromatix_ov13880_ofilm_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_preview.so:system/vendor/lib/libchromatix_ov13880_ofilm_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_snapshot.so:system/vendor/lib/libchromatix_ov13880_ofilm_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_video_4k.so:system/vendor/lib/libchromatix_ov13880_ofilm_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_ofilm_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_ofilm_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_postproc.so:system/vendor/lib/libchromatix_ov13880_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_preview.so:system/vendor/lib/libchromatix_ov13880_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_snapshot.so:system/vendor/lib/libchromatix_ov13880_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_video_4k.so:system/vendor/lib/libchromatix_ov13880_video_4k.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_zsl_preview_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov13880_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_zsl_video_dw9763.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_common.so:system/vendor/lib/libchromatix_ov5675_qtech_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_liveshot.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_preview.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_snapshot.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_video.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_default_preview_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_default_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_default_video.so:system/vendor/lib/libchromatix_ov5675_qtech_default_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_default_video_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_default_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_120.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_120_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_120_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_60.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_60_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_60_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_90.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_90_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_90_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_liveshot.so:system/vendor/lib/libchromatix_ov5675_qtech_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_postproc.so:system/vendor/lib/libchromatix_ov5675_qtech_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_preview.so:system/vendor/lib/libchromatix_ov5675_qtech_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_snapshot.so:system/vendor/lib/libchromatix_ov5675_qtech_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_zsl_preview_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_zsl_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_ov5675_qtech_zsl_video_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_zsl_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_common.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_postproc.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_preview.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_common.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_default_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_default_video.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_default_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_default_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_120_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_60_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_hfr_90_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_postproc.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_preview.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_common.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_postproc.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_preview.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_common.so:system/vendor/lib/libchromatix_s5k5e8_qtech_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_default_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_default_video.so:system/vendor/lib/libchromatix_s5k5e8_qtech_default_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_default_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_120_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_60_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_hfr_90_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_postproc.so:system/vendor/lib/libchromatix_s5k5e8_qtech_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_preview.so:system/vendor/lib/libchromatix_s5k5e8_qtech_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_zsl_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_zsl_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_common.so:system/vendor/lib/libchromatix_s5k5e8_sunny_common.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_sunny_cpp_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_default_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_default_video.so:system/vendor/lib/libchromatix_s5k5e8_sunny_default_video.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_default_video_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_sunny_hfr_120.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_hfr_120_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_sunny_hfr_60.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_hfr_60_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_sunny_hfr_90.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_hfr_90_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_sunny_liveshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_postproc.so:system/vendor/lib/libchromatix_s5k5e8_sunny_postproc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_preview.so:system/vendor/lib/libchromatix_s5k5e8_sunny_preview.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_sunny_snapshot.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_zsl_preview_3a.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libchromatix_s5k5e8_sunny_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_sunny_zsl_video_3a.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
@@ -666,34 +248,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libjni_dualcamera.so:system/vendor/lib/libjni_dualcamera.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
@@ -716,10 +286,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_arc_ofilm_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_arc_ofilm_ov12a10_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_arc_ofilm_ov13880_eeprom.so:system/vendor/lib/libmmcamera_arc_ofilm_ov13880_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_arc_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_arc_ov12a10_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_arc_ov13880_eeprom.so:system/vendor/lib/libmmcamera_arc_ov13880_eeprom.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_cac3_lib.so:system/vendor/lib/libmmcamera_cac3_lib.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_csidtg.so:system/vendor/lib/libmmcamera_csidtg.so \
@@ -769,25 +335,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_isp_template.so:system/vendor/lib/libmmcamera_isp_template.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ofilm_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_ofilm_ov12a10_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ofilm_ov13880_eeprom.so:system/vendor/lib/libmmcamera_ofilm_ov13880_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so:system/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ov12a10.so:system/vendor/lib/libmmcamera_ov12a10.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_ov12a10_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ov13880.so:system/vendor/lib/libmmcamera_ov13880.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ov13880_eeprom.so:system/vendor/lib/libmmcamera_ov13880_eeprom.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ov5675_qtech.so:system/vendor/lib/libmmcamera_ov5675_qtech.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_qtech_ov5675_eeprom.so:system/vendor/lib/libmmcamera_qtech_ov5675_eeprom.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_s5k5e8_ofilm.so:system/vendor/lib/libmmcamera_s5k5e8_ofilm.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_s5k5e8_qtech.so:system/vendor/lib/libmmcamera_s5k5e8_qtech.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_s5k5e8_sunny.so:system/vendor/lib/libmmcamera_s5k5e8_sunny.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
@@ -805,11 +359,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmsw_math.so:system/vendor/lib/libmmsw_math.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmsw_opencl.so:system/vendor/lib/libmmsw_opencl.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libmmsw_platform.so:system/vendor/lib/libmmsw_platform.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmorpho_easy_hdr.so:system/vendor/lib/libmorpho_easy_hdr.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmorpho_group_portrait.so:system/vendor/lib/libmorpho_group_portrait.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmorpho_hdr_checker.so:system/vendor/lib/libmorpho_hdr_checker.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmorpho_panorama_gp.so:system/vendor/lib/libmorpho_panorama_gp.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
@@ -817,7 +366,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libqisl.so:system/vendor/lib/libqisl.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
@@ -837,7 +385,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libqti_performance.so:system/vendor/lib/libqti_performance.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
@@ -865,30 +412,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libscveTextReco_stub.so:system/vendor/lib/libscveTextReco_stub.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsdsprpc.so:system/vendor/lib/libsdsprpc.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libslimclient.so:system/vendor/lib/libslimclient.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
@@ -918,7 +455,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/hw/gatekeeper.msm8953.so:system/vendor/lib64/hw/gatekeeper.msm8953.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/hw/keystore.msm8953.so:system/vendor/lib64/hw/keystore.msm8953.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/hw/vulkan.msm8953.so:system/vendor/lib64/hw/vulkan.msm8953.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib64/hw/wbc_hal.default.so:system/vendor/lib64/hw/wbc_hal.default.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
@@ -1024,8 +560,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib64/libmorpho_group_portrait.so:system/vendor/lib64/libmorpho_group_portrait.so \
-    vendor/xiaomi/tissot/proprietary/vendor/lib64/libmorpho_panorama_gp.so:system/vendor/lib64/libmorpho_panorama_gp.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/xiaomi/tissot/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
@@ -1132,7 +666,8 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     ims \
     imssettings \
-    qcrilhook \
     com.qti.location.sdk \
-    qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel \
-    qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel
+    qcrilhook \
+    qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel \
+    qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel \
+    qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel
