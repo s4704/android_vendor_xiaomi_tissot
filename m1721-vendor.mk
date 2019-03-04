@@ -564,6 +564,8 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1721/proprietary/vendor/lib/libqti_performance.so:system/vendor/lib/libqti_performance.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
+    vendor/meizu/m1721/proprietary/vendor/lib/libremosaic_tuning.so:system/vendor/lib/libremosaic_tuning.so \
+    vendor/meizu/m1721/proprietary/vendor/lib/libremosaiclib.so:system/vendor/lib/libremosaiclib.so \
     vendor/meizu/m1721/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/meizu/m1721/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
