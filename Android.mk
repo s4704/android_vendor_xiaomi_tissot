@@ -31,6 +31,33 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel
+LOCAL_MODULE_OWNER := meizu
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel
+LOCAL_MODULE_OWNER := meizu
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel
+LOCAL_MODULE_OWNER := meizu
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libts_detected_face_hal
 LOCAL_MODULE_OWNER := meizu
 LOCAL_SRC_FILES := proprietary/vendor/lib/libts_detected_face_hal.so

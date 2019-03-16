@@ -153,7 +153,10 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1721/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so
 
 PRODUCT_PACKAGES += \
-    libsdm-disp-apis
+    libsdm-disp-apis \
+    qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel \
+    qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel \
+    qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel
 PRODUCT_COPY_FILES += \
     vendor/meizu/m1721/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/meizu/m1721/proprietary/etc/camera/camera_config.xml:system/etc/camera/camera_config.xml \
