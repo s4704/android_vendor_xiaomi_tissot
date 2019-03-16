@@ -190,6 +190,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1721/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/meizu/m1721/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/meizu/m1721/proprietary/lib/libphoto_timestamp.so:system/lib/libphoto_timestamp.so \
+    vendor/meizu/m1721/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/meizu/m1721/proprietary/lib/libvfb_render.so:system/lib/libvfb_render.so \
     vendor/meizu/m1721/proprietary/lib/libvmp_render.so:system/lib/libvmp_render.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
@@ -414,7 +415,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m1721/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/meizu/m1721/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
-    vendor/meizu/m1721/proprietary/vendor/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/meizu/m1721/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
