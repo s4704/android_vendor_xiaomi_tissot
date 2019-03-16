@@ -31,18 +31,6 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libtime_genoff
-LOCAL_MODULE_OWNER := meizu
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtime_genoff.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtime_genoff.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libts_detected_face_hal
 LOCAL_MODULE_OWNER := meizu
 LOCAL_SRC_FILES := proprietary/vendor/lib/libts_detected_face_hal.so
@@ -65,6 +53,18 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libtime_genoff
+LOCAL_MODULE_OWNER := meizu
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libtime_genoff.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libtime_genoff.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := meizu
 LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -79,17 +79,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER := meizu
 LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := datastatusnotification
-LOCAL_MODULE_OWNER := meizu
-LOCAL_SRC_FILES := proprietary/app/datastatusnotification/datastatusnotification.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -203,16 +192,6 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.location.sdk
-LOCAL_MODULE_OWNER := meizu
-LOCAL_SRC_FILES := proprietary/framework/com.qti.location.sdk.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_OWNER := meizu
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
@@ -220,33 +199,6 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel
-LOCAL_MODULE_OWNER := meizu
-LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_hx8399c_holitech_1080p_video_mode_dsi_panel.xml
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .xml
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel
-LOCAL_MODULE_OWNER := meizu
-LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_hx8399c_tcl_1080p_video_mode_dsi_panel.xml
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .xml
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel
-LOCAL_MODULE_OWNER := meizu
-LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_nili7807d_txdkj_1080p_video_mode_dsi_panel.xml
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .xml
 include $(BUILD_PREBUILT)
 
 endif
